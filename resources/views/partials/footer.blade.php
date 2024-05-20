@@ -66,7 +66,7 @@ $links = [
                         @foreach ($links['dccomics']['items'] as $item)
                             <li>
                                 <a href="{{ $item['url'] }}">{{ $item['name'] }}</a>
-                            </liclass>
+                            </li>
                         @endforeach
                     </ul>
                 </div>
@@ -76,7 +76,7 @@ $links = [
                         @foreach ($links['shop']['items'] as $item)
                             <li>
                                 <a href="{{ $item['url'] }}">{{ $item['name'] }}</a>
-                            </liclass>
+                            </li>
                         @endforeach
                     </ul>
                 </div>
@@ -89,7 +89,7 @@ $links = [
                         @foreach ($links['dc']['items'] as $item)
                             <li>
                                 <a href="{{ $item['url'] }}">{{ $item['name'] }}</a>
-                            </liclass>
+                            </li>
                         @endforeach
                     </ul>
                 </div>
@@ -99,7 +99,7 @@ $links = [
                         @foreach ($links['sites']['items'] as $item)
                             <li>
                                 <a href="{{ $item['url'] }}">{{ $item['name'] }}</a>
-                            </liclass>
+                            </li>
                         @endforeach
                     </ul>
                 </div>
@@ -116,8 +116,11 @@ $links = [
             <div class="text-white blue-border p-2" id="sign-button">
                 <a href="#">SIGN-UP NOW!</a> 
             </div>
-            <div>
-                
+            <div class="d-flex">
+                <h5 class="text-white ">{{ $links['followlinks']['title'] }}</h5>
+                @foreach ($links['followlinks']['items'] as $item)
+                    <i class="{{ $item['name'] }}"></i>
+                @endforeach
             </div>   
         </div>
 
@@ -153,5 +156,12 @@ $links = [
     }
     h5{
         padding-left: 30px;
+    }
+    i{
+        color: grey;
+        padding: 1px 10px;
+    }
+    i:hover{
+        color: white;
     }
 </style>
