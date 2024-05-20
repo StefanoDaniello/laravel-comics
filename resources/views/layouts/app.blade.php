@@ -22,7 +22,7 @@
     <main>
         @yield('content')
     </main>
-    
+    @include ('partials.blueSlide')
     @include ('partials.footer')
     
 </body>

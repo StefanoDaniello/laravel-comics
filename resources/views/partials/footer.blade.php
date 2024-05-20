@@ -158,8 +158,9 @@ $links = [
         padding-left: 30px;
     }
     i{
-        color: grey;
-        padding: 1px 10px;
+        color:rgb(168, 168, 168);
+        font-size: 30px;
+        padding: 0px 10px;
     }
     i:hover{
         color: white;
