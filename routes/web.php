@@ -19,5 +19,6 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/about-me', function () {
-    return view('pages.about');
+    $comics = config('comics_db.comics');
+    return view('pages.about',compact('comics'));
 })->name('about');

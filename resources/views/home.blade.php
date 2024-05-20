@@ -7,7 +7,6 @@
     <div class="button-blue d-flex justify-content-center align-items-center">
         <h2>CURRENT SERIES</h2>
     </div>
-    <a href="/about-me">about</a>
     <div class="container">
         <div class="row">
             @foreach ($comics as $comic) 
@@ -27,35 +26,7 @@
         </div>
     </div>
 </div>
-
-
-    <!-- <ul>
-        @foreach ($comics as $comic)
-            <li>
-                {{$comic['title']}}
-            </li>
-        @endforeach
-    </ul> -->
-
-    <!-- 
-   <div id="main-menu">
-        <nav class="navbar-nav container navbar-light">
-            <ul>
-                <li>
-                    <a class="nav-link {{ Route::currentRouteName() == 'home' ? 'active text-warning' : ''}}" 
-                        href="{{route('home')}}">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a class="nav-link {{ Route::currentRouteName() == 'about' ? 'active text-warning' : ''}}" 
-                        href="{{route('about')}}">
-                        About
-                    </a>
-                </li>
-            </ul>
-        </nav>
-   </div> -->
+    
 @endsection
 
 <style lang="scss" scoped>

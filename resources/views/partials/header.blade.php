@@ -21,13 +21,29 @@ $menu = [
             <img src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="logo"/>
         </div>
 
-        <ul class="d-flex align-items-center none-1">
+        <ul class="d-flex align-items-center">
+            <li class="mx-2 fw-bold text-h ">
+                <a class="nav-link {{ Route::currentRouteName() == 'home' ? 'active color-h' : ''}}" 
+                    href="{{route('home')}}">
+                    HOME
+                    <div class="border-b"></div>
+                </a>
+            </li>
             @foreach ($menu as $menuItem) 
-            <li class="mx-2 fw-bold text-h " >
+            <li class="mx-2 fw-bold text-h ">
                 {{$menuItem}}
                 <div class="border-b"></div>
             </li>
             @endforeach
+            
+            <li class="mx-2 fw-bold text-h ">
+            <a class="nav-link {{ Route::currentRouteName() == 'about' ? 'active color-h' : ''}}" 
+                    href="{{route('about')}}">
+                    MORE
+                    <div class="border-b"></div>
+                </a>
+            </li>
+            
            
         </ul>
 
@@ -60,6 +76,9 @@ $menu = [
         transform: translate(0, 66px);
         transition: 0.5s ease-in-out;
         }
+    }
+    .color-h{
+        color: #0C7CEC;
     }
     #search-container{
        position: relative;
