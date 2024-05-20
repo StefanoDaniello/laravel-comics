@@ -17,7 +17,7 @@
                 <div class="card-body ">
                     <h1 class="card-title text-info ">{{$comic['title']}}</h1>
                     <div class="d-flex justify-content-between align-items-center  bg-success pt-2 my-2">
-                        <p class="card-text mx-2"><span class="opacity-75 text-white">U.S. PRICE: </span>{{$comic['price']}}</p>
+                        <p class="card-text mx-3"><span class="opacity-75 text-white">U.S. PRICE: </span>{{$comic['price']}}</p>
                         <p class="opacity-75 text-white mx-3">AVIABLE</p>
                     </div>
                     <p class="card-text w-75 ">{{$comic['description']}}</p>
