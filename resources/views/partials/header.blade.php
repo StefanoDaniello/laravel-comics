@@ -93,7 +93,10 @@ $menu = [
         }
         i{
             position: absolute;
-            left: 5px;
+            top: 2px;
+            left: -8px;
+            font-size: 18px;
+            color: black;
         }
     }
    

@@ -13,6 +13,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+// metodo per passare più array
+// Route::get('/', function () {
+//     $comics = config('comics_db.comics');
+//     $comics2 = config('comics_db-2.comics-2');
+//     $data=[
+//         'comics' => $comics
+//         ,'comics2' => $comics2
+//     ];
+//     return view('home',compact('data'));
+// })->name('home');
+
+
+
+
 Route::get('/', function () {
     $comics = config('comics_db.comics');
     return view('home',compact('comics'));
